@@ -12,5 +12,9 @@ jobs:
     steps:
       - name: Print greeting
         run: echo "Hello world!"
+      - name: Print multi-line command
+        run: |
+            echo "hello"
+            echo "this is test"
       - name: Print goodbye
         run: echo "Done"
