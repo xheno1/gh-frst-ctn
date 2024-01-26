@@ -1,0 +1,16 @@
+# Name of the workflow
+name: first workflow test
+# when will this workflow executed or the EVENT -- see list of event triggers
+on: workflow_dispatch
+jobs:
+  # needs to be indented since it belongs to jobs also we can name this into any name we want
+  first-job-which-I-name: 
+    # where are going to run this jobs... please see list of github action runners
+    # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners
+    runs-on: ubuntu-latest
+    # Steps of jobs which will be executed
+    steps:
+      - name: Print greeting
+        run: echo "Hello world!"
+      - name: Print goodbye
+        run: echo "Done"
